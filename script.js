@@ -13,7 +13,7 @@ const APP_CONFIG = {
         phone: "0327-1494095",
         location: "Lahore, Pakistan",
         githubUsername: "Adeel0951",
-        linkedin: "www.linkedin.com/in/muhammad-adeel-b2009b414",
+        linkedin: "https://www.linkedin.com/in/muhammad-adeel-b2009b414",
         whatsapp: "https://wa.me/923271494095",
         resumeUrl: "assets/resume.pdf"
     },
