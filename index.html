@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Adeel | Front-End Website Developer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Official portfolio of Muhammad Adeel, a Front-End Website Developer based in Lahore, Pakistan. Specializing in HTML, CSS, JavaScript, and responsive, user-friendly business websites.">
+    <meta name="keywords" content="Muhammad Adeel, Front-End Developer, Web Developer Pakistan, HTML CSS JavaScript, Responsive Web Design, Netlify, Lahore Web Developer, BSCS Student">
+    <meta name="author" content="Muhammad Adeel">
+    <link rel="canonical" href="https://muhammadadeel.netlify.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muhammadadeel.netlify.app/">
+    <meta property="og:title" content="Muhammad Adeel | Front-End Website Developer">
+    <meta property="og:description" content="Explore the portfolio of Muhammad Adeel - building modern, responsive, and user-friendly business websites with HTML, CSS, and JavaScript.">
+    <meta property="og:image" content="assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://muhammadadeel.netlify.app/">
+    <meta property="twitter:title" content="Muhammad Adeel | Front-End Website Developer">
+    <meta property="twitter:description" content="Explore the portfolio of Muhammad Adeel - building modern, responsive, and user-friendly business websites.">
+    <meta property="twitter:image" content="assets/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data (JSON-LD Schema) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammad Adeel",
+      "jobTitle": "Front-End Website Developer",
+      "description": "Front-End Website Developer specialized in HTML, CSS, JavaScript, and building responsive, user-friendly business websites.",
+      "url": "https://muhammadadeel.netlify.app/",
+      "sameAs": [
+        "https://www.linkedin.com/in/muhammad-adeel-0951/",
+        "https://github.com/Adeel0951"
+      ],
+      "email": "mailto:malikadeelawan1212@gmail.com",
+      "telephone": "0327-1494095",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lahore",
+        "addressCountry": "Pakistan"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Premium Hacker Loader Overlay -->
+    <div id="loader" class="loader-container">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-text">ADEEL_DECK</span>
+                <div class="loader-circle"></div>
+            </div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar" id="loader-bar"></div>
+            </div>
+            <p class="loader-text">Compiling Cyber Grid...</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor Glows -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    <div class="custom-cursor-glow" id="custom-cursor-glow"></div>
+
+    <!-- Particle Background Grid (Amber Rain) -->
+    <canvas id="bg-particles"></canvas>
+    
+    <!-- Futuristic Scanner Laser -->
+    <div class="scan-laser"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Muhammad Adeel Home">
+                <span class="logo-accent">&lt;</span>MA<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn-primary btn-nav magnetic-btn">Hire Me</a>
+                <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge animate-on-scroll">
+                        <span class="badge-dot"></span>
+                        <span>Available for Projects & Internships</span>
+                    </div>
+                    <h1 class="hero-title animate-on-scroll">
+                        Hi, I'm <span class="text-gradient font-space">Muhammad Adeel</span>
+                    </h1>
+                    <div class="hero-subtitle animate-on-scroll">
+                        I am a <span id="typing-element" class="text-glow"></span><span class="typing-cursor">|</span>
+                    </div>
+                    <p class="hero-description animate-on-scroll">
+                        Building modern, responsive, and user-friendly business websites with HTML, CSS, and JavaScript. Passionate about clean code, great user experience, and growing into AI automation.
+                    </p>
+                    <div class="hero-buttons animate-on-scroll">
+                        <a href="#projects" class="btn-primary magnetic-btn"><i class="fa-solid fa-code"></i> View Work</a>
+                        <a href="mailto:malikadeelawan1212@gmail.com" class="btn-secondary magnetic-btn"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+                        <a href="#" id="download-resume-btn" class="btn-tertiary magnetic-btn" download><i class="fa-solid fa-download"></i> Resume</a>
+                    </div>
+                    <div class="hero-socials animate-on-scroll">
+                        <a href="https://github.com/Adeel0951" target="_blank" rel="noopener" aria-label="GitHub Profile" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-adeel-0951/" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/923271494095" target="_blank" rel="noopener" aria-label="WhatsApp Profile" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:malikadeelawan1212@gmail.com" aria-label="Email" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+923271494095" aria-label="Phone Number" class="social-icon"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-on-scroll">
+                    <div class="hero-image-wrapper">
+                        <!-- Neon frame border -->
+                        <div class="hero-frame-glow"></div>
+                        <div class="hero-frame">
+                            <!-- Temporary styled SVG placeholder or portrait photo -->
+                            <img src="assets/portrait.jpg" alt="Muhammad Adeel Portrait" class="hero-image" id="hero-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 450%22 width=%22100%25%22 height=%22100%25%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%230e0d0a%22/><circle cx=%22200%22 cy=%22180%22 r=%2290%22 fill=%22%23ffb000%22 opacity=%220.15%22/><path d=%22M100 370 C 100 270, 300 270, 300 370%22 fill=%22%23fbc02d%22 opacity=%220.15%22/><text x=%2250%25%22 y=%2250%25%22 font-family=%22Space Grotesk, monospace%22 font-size=%2215%22 fill=%22%23ffb000%22 font-weight=%22bold%22 text-anchor=%22middle%22>[Portrait Placeholder]</text><text x=%2250%25%22 y=%2256%25%22 font-family=%22Inter, sans-serif%22 font-size=%2212%22 fill=%22%23a19f8e%22 text-anchor=%22middle%22>Upload portrait.png to /assets</text></svg>'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator-container">
+                <a href="#about" aria-label="Scroll to About Section" class="scroll-indicator">
+                    <span class="mouse-wheel"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="subtitle-gradient">Who I Am</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info animate-on-scroll">
+                        <h3 class="about-subtitle">Front-End Developer & CS Student</h3>
+                        <p class="about-text">
+                            I am Muhammad Adeel, a Front-End Website Developer with hands-on experience building modern, responsive, and user-friendly business websites. I'm currently pursuing a BS in Computer Science at the University of Lahore.
+                        </p>
+                        <p class="about-text">
+                            With a strong foundation in HTML, CSS, and JavaScript, I design clean, mobile-friendly interfaces and deploy them with Git, GitHub, and Netlify. My work ranges from business landing pages to full-stack sites built with PHP and MySQL.
+                        </p>
+                        <p class="about-text">
+                            Always pushing boundaries and embracing continuous learning, I'm currently expanding into Python, AI automation, n8n, and REST APIs while building clean, fast, and user-centric websites.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <span class="stat-num" data-count="4">0</span><span class="stat-plus">+</span>
+                                <p class="stat-label">Websites Built</p>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+                                <p class="stat-label">Tech Tools Used</p>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+                                <p class="stat-label">Responsive Design Focus</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-features animate-on-scroll">
+                        <div class="feature-box">
+                            <div class="feature-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="feature-content">
+                                <h4>Front-End Development</h4>
+                                <p>Responsive websites and landing pages built with HTML5, CSS3, and JavaScript.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                            <div class="feature-content">
+                                <h4>Responsive & UI/UX Design</h4>
+                                <p>Cross-browser compatible layouts, mobile-friendly design, and clean UI/UX principles.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+                            <div class="feature-content">
+                                <h4>Growing Into AI Automation</h4>
+                                <p>Currently learning Python, AI automation, n8n, and REST APIs to expand into automation workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="subtitle-gradient">My Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="skills-category-tabs animate-on-scroll">
+                    <button class="tab-btn active" data-category="all">All Skills</button>
+                    <button class="tab-btn" data-category="programming">Languages</button>
+                    <button class="tab-btn" data-category="ai">Currently Learning</button>
+                    <button class="tab-btn" data-category="web">Tools & Web</button>
+                    <button class="tab-btn" data-category="marketing">Database & Systems</button>
+                </div>
+
+                <div class="skills-grid" id="skills-container">
+                    <!-- Injected dynamically from script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="timeline-section">
+            <div class="container">
+                <div class="timeline-grid">
+                    <!-- Work Experience Timeline -->
+                    <div class="timeline-col">
+                        <div class="section-header animate-on-scroll">
+                            <span class="subtitle-gradient">Professional Journey</span>
+                            <h2 class="section-title">Experience</h2>
+                            <div class="title-underline"></div>
+                        </div>
+                        <div class="timeline" id="experience-container">
+                            <!-- Injected dynamically from script.js -->
+                        </div>
+                    </div>
+
+                    <!-- Education Timeline -->
+                    <div class="timeline-col">
+                        <div class="section-header animate-on-scroll">
+                            <span class="subtitle-gradient">Academic Foundation</span>
+                            <h2 class="section-title">Education</h2>
+                            <div class="title-underline"></div>
+                        </div>
+                        <div class="timeline" id="education-container">
+                            <!-- Injected dynamically from script.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="subtitle-gradient">How I Can Help You</span>
+                    <h2 class="section-title">My Services</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="services-grid" id="services-container">
+                    <!-- Injected dynamically from script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="subtitle-gradient">Showcase Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="projects-filter animate-on-scroll">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                    <button class="filter-btn" data-filter="business">Business</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="demo">Demo</button>
+                </div>
+
+                <div class="projects-grid" id="projects-container">
+                    <!-- Injected dynamically from script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="subtitle-gradient">Success Benchmarks</span>
+                    <h2 class="section-title">Key Milestones</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="achievements-grid" id="achievements-container">
+                    <!-- Injected dynamically from script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="subtitle-gradient">Insights & Musings</span>
+                    <h2 class="section-title">Recent Articles</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="blog-grid" id="blog-container">
+                    <!-- Injected dynamically from script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="subtitle-gradient">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info-panel animate-on-scroll">
+                        <h3>Connect With Me Directly</h3>
+                        <p class="contact-subtext">Have a project in mind, an opportunity to discuss, or just want to chat? Drop a message!</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div class="contact-item-text">
+                                    <span>WhatsApp Me</span>
+                                    <a href="https://wa.me/923271494095" target="_blank" rel="noopener">0327-1494095</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-item-text">
+                                    <span>Location</span>
+                                    <p>Lahore, Pakistan</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-title">Find me on social platforms</div>
+                        <div class="contact-social-links">
+                            <a href="https://github.com/Adeel0951" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/muhammad-adeel-0951/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://wa.me/923271494095" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel animate-on-scroll">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                    <span class="error-msg" id="name-error">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                    <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" placeholder="Project Inquiry" required>
+                                    <span class="error-msg" id="subject-error">Please enter a subject</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Let's build something epic..." required></textarea>
+                                <span class="error-msg" id="message-error">Please type your message</span>
+                            </div>
+
+                            <button type="submit" class="btn-primary form-submit-btn magnetic-btn">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                            
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-accent">&lt;</span>MA<span class="logo-accent"> /&gt;</span>
+                </a>
+                <p class="footer-tagline">Crafting clean, responsive websites with modern web technologies.</p>
+            </div>
+            
+            <div class="footer-mid">
+                <div class="footer-nav-col">
+                    <h4>Navigation</h4>
+                    <div class="footer-nav-links">
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#services">Services</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h4>Social Handles</h4>
+                    <div class="footer-social-links">
+                        <a href="https://github.com/Adeel0951" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/muhammad-adeel-0951/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://wa.me/923271494095" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="current-year">2026</span> Muhammad Adeel. All Rights Reserved.</p>
+                <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
